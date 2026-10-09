@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 26.8.0.3 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		pre { font-size: 10pt; font-family: "Liberation Mono", monospace; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre>&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
+  &lt;meta name=&quot;theme-color&quot; content=&quot;#070a13&quot; /&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Amreetal helps businesses build AI voice agents that answer calls, qualify leads, book appointments, and take action.&quot; /&gt;
+  &lt;title&gt;Amreetal — AI Voice Agents That Take Action&lt;/title&gt;
+  &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot; /&gt;
+  &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin /&gt;
+  &lt;link href=&quot;https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+  &lt;style&gt;
+    :root {
+      color-scheme: dark;
+      --bg: #070a13;
+      --surface: #101522;
+      --surface-2: #151b2b;
+      --line: rgba(196, 207, 255, .12);
+      --text: #f6f7ff;
+      --muted: #a0a9bd;
+      --violet: #9275ff;
+      --cyan: #64d9f1;
+      --green: #7be2b4;
+      --max: 1200px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; overflow-x: hidden; background: var(--bg); color: var(--text);
+      font-family: &quot;DM Sans&quot;, sans-serif; -webkit-font-smoothing: antialiased;
+    }
+    body::before {
+      content: &quot;&quot;; position: fixed; inset: 0; pointer-events: none; z-index: -1;
+      background: radial-gradient(circle at 50% -20%, rgba(88, 76, 190, .14), transparent 48%);
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; cursor: pointer; }
+    button:focus-visible, a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 5px; }
+    .container { width: min(calc(100% - 48px), var(--max)); margin-inline: auto; }
+    .section { position: relative; padding: 112px 0; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 9px; color: #b9abff;
+      font-size: 11px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase;
+    }
+    .eyebrow::before { content: &quot;&quot;; width: 6px; height: 6px; border-radius: 50%; background: var(--violet); box-shadow: 0 0 15px var(--violet); }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { font-family: Manrope, sans-serif; letter-spacing: -.055em; }
+    h1 { font-size: clamp(47px, 6.2vw, 86px); line-height: 1.045; font-weight: 700; }
+    h2 { font-size: clamp(36px, 4.2vw, 58px); line-height: 1.12; font-weight: 700; }
+    h3 { font-size: 21px; letter-spacing: -.035em; }
+    p { line-height: 1.7; color: var(--muted); }
+    .gradient-text {
+      background: linear-gradient(105deg, #f3f0ff 3%, #aa9aff 43%, #68d8f0 92%);
+      color: transparent; -webkit-background-clip: text; background-clip: text;
+    }
+    .section-heading { max-width: 690px; margin-bottom: 46px; }
+    .section-heading h2 { margin: 17px 0 18px; }
+    .section-heading p { max-width: 570px; font-size: 17px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 11px;
+      min-height: 52px; padding: 0 21px; border: 1px solid transparent; border-radius: 10px;
+      font-weight: 700; font-size: 14px; transition: transform .25s, border-color .25s, background .25s, box-shadow .25s;
+    }
+    .btn:hover { transform: translateY(-3px); }
+    .btn-primary { color: #0d0b1b; background: linear-gradient(110deg, #bbacff, #89dceb); box-shadow: 0 9px 35px rgba(133, 125, 255, .17); }
+    .btn-primary:hover { box-shadow: 0 13px 42px rgba(133, 125, 255, .3); }
+    .btn-outline { border-color: rgba(207, 214, 255, .22); background: rgba(255, 255, 255, .035); color: white; }
+    .btn-outline:hover { border-color: rgba(207, 214, 255, .5); background: rgba(255, 255, 255, .08); }
+    .pill { display: inline-flex; align-items: center; gap: 8px; padding: 8px 11px; border: 1px solid var(--line); border-radius: 99px; color: #c6cce0; background: rgba(255, 255, 255, .035); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 12px var(--green); flex: none; }
+    .card { border: 1px solid var(--line); background: linear-gradient(145deg, rgba(27, 34, 54, .82), rgba(12, 17, 29, .83)); border-radius: 20px; }
+
+    /* Navigation */
+    .nav-wrap { position: sticky; top: 0; z-index: 50; background: rgba(7, 10, 19, .78); border-bottom: 1px solid rgba(255,255,255,.065); backdrop-filter: blur(18px); }
+    .nav { height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; font: 800 21px Manrope, sans-serif; letter-spacing: -.065em; }
+    .brand-mark { width: 28px; height: 28px; position: relative; display: grid; place-items: center; }
+    .brand-mark::before, .brand-mark::after { content: &quot;&quot;; position: absolute; border-radius: 50%; border: 3px solid transparent; transform: rotate(-45deg); }
+    .brand-mark::before { width: 23px; height: 23px; border-top-color: #b5a4ff; border-right-color: #b5a4ff; }
+    .brand-mark::after { width: 12px; height: 12px; border-bottom-color: #6cdef2; border-left-color: #6cdef2; }
+    .nav-links { display: flex; align-items: center; gap: 31px; color: #b7bfd1; font-size: 13px; font-weight: 600; }
+    .nav-links a:hover, .footer a:hover { color: white; }
+    .nav-actions { display: flex; align-items: center; gap: 16px; }
+    .nav-actions .btn { min-height: 39px; padding-inline: 15px; font-size: 12px; }
+    .menu-button { display: none; width: 40px; height: 40px; border: 1px solid var(--line); background: var(--surface); color: white; border-radius: 9px; }
+
+    /* Hero */
+    .hero { min-height: 735px; overflow: hidden; display: flex; align-items: center; padding: 105px 0 105px; }
+    .hero::before { content: &quot;&quot;; position: absolute; width: 800px; height: 800px; right: -170px; top: -135px; border-radius: 50%; pointer-events: none; background: radial-gradient(circle, rgba(98,80,211,.2), rgba(47,61,126,.08) 42%, transparent 68%); }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1.06fr; align-items: center; gap: 24px; }
+    .hero-copy { position: relative; z-index: 2; max-width: 630px; }
+    .hero-copy h1 { margin: 25px 0 23px; }
+    .hero-copy &gt; p { max-width: 540px; font-size: 17px; }
+    .hero-buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px; }
+    .hero-foot { display: flex; align-items: center; gap: 12px; margin-top: 37px; color: #8994ac; font-size: 12px; }
+    .hero-foot span:first-child { color: var(--green); }
+
+    .hero-art { height: 565px; position: relative; perspective: 1000px; isolation: isolate; }
+    .art-grid { position: absolute; inset: 32px 0 5px; opacity: .5; background-image: linear-gradient(rgba(152,166,241,.065) 1px, transparent 1px), linear-gradient(90deg, rgba(152,166,241,.065) 1px, transparent 1px); background-size: 35px 35px; mask-image: radial-gradient(ellipse, black 25%, transparent 72%); transform: rotateX(62deg) translateY(75px); }
+    .orbit { position: absolute; left: 50%; top: 46%; border: 1px solid rgba(153, 143, 255, .16); border-radius: 50%; transform: translate(-50%, -50%) rotateX(66deg) rotate(-20deg); }
+    .orbit.a { width: 425px; height: 425px; } .orbit.b { width: 585px; height: 585px; opacity: .65; }
+    .core { position: absolute; left: 50%; top: 45%; width: 246px; height: 246px; transform: translate(-50%,-50%); border-radius: 50%; background: radial-gradient(circle at 35% 30%, #ddd3ff 0%, #978af3 12%, #4a42a8 34%, #19265f 58%, #0b163a 73%); box-shadow: inset -16px -19px 34px #080b27, inset 13px 9px 29px rgba(255,255,255,.27), 0 0 65px rgba(123,111,254,.38), 0 0 145px rgba(94,103,238,.18); animation: breathe 5s ease-in-out infinite; }
+    .core::before { content: &quot;&quot;; position: absolute; inset: -16px; border: 1px solid rgba(155,155,255,.33); border-radius: 50%; box-shadow: 0 0 28px rgba(155,155,255,.16); }
+    .core::after { content: &quot;&quot;; position: absolute; inset: 39px; border-radius: 50%; background: radial-gradient(circle at 44% 40%, rgba(238,245,255,.7), rgba(143,135,255,.18) 27%, transparent 60%); filter: blur(7px); }
+    .core-wave { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 5px; z-index: 1; }
+    .core-wave i, .waveform i { display: block; width: 4px; height: 16px; border-radius: 10px; background: #e6e8ff; animation: wave 1s ease-in-out infinite alternate; box-shadow: 0 0 12px #d2c6ff; }
+    .core-wave i:nth-child(2n), .waveform i:nth-child(2n) { animation-delay: -.48s; }
+    .core-wave i:nth-child(3n), .waveform i:nth-child(3n) { animation-delay: -.72s; }
+    .core-wave i:nth-child(5n), .waveform i:nth-child(5n) { animation-delay: -.25s; }
+    .core-wave i:nth-child(4n) { height: 25px; }
+    .float-card { position: absolute; z-index: 2; padding: 14px 16px; border: 1px solid rgba(205,212,255,.18); background: rgba(20,26,44,.83); backdrop-filter: blur(16px); border-radius: 13px; box-shadow: 0 22px 50px rgba(0,0,0,.26); animation: float 6s ease-in-out infinite; }
+    .float-card small { display: block; color: #8895b0; font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 7px; }
+    .float-card strong { font-size: 13px; font-weight: 600; }
+    .incoming { top: 76px; left: 13px; min-width: 172px; transform: rotate(-5deg); }
+    .transcript { top: 105px; right: 0; width: 176px; animation-delay: -2s; }
+    .action { bottom: 116px; left: 4px; width: 174px; animation-delay: -3s; }
+    .booking { bottom: 108px; right: 1px; width: 178px; animation-delay: -1s; }
+    .line-icon { display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 9px; margin-right: 7px; color: var(--cyan); background: rgba(100,217,241,.11); vertical-align: middle; }
+    .hero-state { position: absolute; left: 50%; bottom: 14px; width: 258px; transform: translateX(-50%); text-align: center; }
+    .hero-state &gt; span { color: #8995ae; font-size: 10px; letter-spacing: .15em; text-transform: uppercase; }
+    .hero-state strong { display: block; margin: 6px 0 12px; color: #e3e4ff; font: 700 14px Manrope; }
+    .state-progress { height: 3px; border-radius: 4px; background: rgba(255,255,255,.13); overflow: hidden; }
+    .state-progress span { display: block; width: 14.285%; height: 100%; background: linear-gradient(90deg, var(--violet), var(--cyan)); transition: width .5s ease; }
+
+    /* Shared section treatments */
+    .divider { border-top: 1px solid var(--line); }
+    .metrics { padding: 34px 0; background: rgba(255,255,255,.015); }
+    .metrics-inner { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .metric { padding: 8px 35px; border-left: 1px solid var(--line); }
+    .metric:first-child { border-left: 0; padding-left: 0; }
+    .metric strong { display: block; font: 700 29px Manrope; letter-spacing: -.055em; }
+    .metric span { display: block; color: var(--muted); margin-top: 5px; font-size: 12px; }
+    .possibilities { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+    .feature { min-height: 220px; padding: 25px; transition: transform .3s, border-color .3s; }
+    .feature:hover, .use-card:hover { transform: translateY(-5px); border-color: rgba(170,158,255,.34); }
+    .feature-icon { width: 42px; height: 42px; display: grid; place-items: center; border: 1px solid rgba(171,160,255,.22); background: rgba(150,129,255,.11); color: #c5baff; border-radius: 11px; font-size: 19px; margin-bottom: 27px; }
+    .feature h3 { margin-bottom: 9px; } .feature p { font-size: 14px; margin-bottom: 0; }
+
+    /* Product dashboard */
+    .product-section { overflow: hidden; background: radial-gradient(ellipse at 65% 50%, rgba(86,65,174,.14), transparent 54%); }
+    .product-layout { display: grid; grid-template-columns: .76fr 1.24fr; align-items: center; gap: 55px; }
+    .product-copy p { font-size: 16px; }
+    .check-list { padding: 0; list-style: none; margin: 29px 0 0; }
+    .check-list li { display: flex; gap: 12px; align-items: center; padding: 9px 0; font-size: 13px; color: #c6cde0; }
+    .check-list b { color: var(--green); font-size: 17px; }
+    .dashboard-scene { padding: 35px 10px 50px; perspective: 1300px; }
+    .dashboard { overflow: hidden; padding: 22px; border: 1px solid rgba(192,197,255,.24); border-radius: 19px; background: linear-gradient(145deg, #1b2039, #0c111e 75%); box-shadow: 24px 35px 100px rgba(0,0,0,.45), 0 0 75px rgba(118,97,238,.11); transform: rotateY(-9deg) rotateX(5deg); transition: transform .5s ease; }
+    .dashboard:hover { transform: rotateY(-3deg) rotateX(2deg) translateY(-6px); }
+    .dash-top { display: flex; justify-content: space-between; gap: 10px; align-items: center; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+    .dash-top strong { font-size: 11px; letter-spacing: .14em; }
+    .dash-title { margin: 22px 0 19px; font: 700 20px Manrope; }
+    .dash-title small { display: block; color: var(--muted); font: 500 10px &quot;DM Sans&quot;; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 5px; }
+    .dash-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+    .dash-stat { padding: 12px; border: 1px solid var(--line); border-radius: 9px; background: rgba(255,255,255,.025); }
+    .dash-stat small { display: block; color: #98a3bc; font-size: 10px; margin-bottom: 8px; }
+    .dash-stat b { font: 700 20px Manrope; letter-spacing: -.06em; }
+    .call-panel { margin-top: 17px; padding: 17px; border: 1px solid var(--line); background: #111827; border-radius: 10px; }
+    .call-panel-head { display: flex; justify-content: space-between; font-size: 10px; font-weight: 700; letter-spacing: .13em; color: #abb4ca; }
+    .chat { margin-top: 15px; padding: 10px 12px; border-radius: 9px; background: rgba(255,255,255,.04); font-size: 12px; line-height: 1.5; color: #d2d8e9; }
+    .chat b { display: block; color: #9ba6be; font-size: 10px; margin-bottom: 3px; }
+    .chat.ai { background: rgba(137,119,255,.105); }
+    .chat.ai b { color: #b8aaff; }
+    .dash-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 15px; }
+    .dash-actions span { padding: 7px 9px; border-radius: 6px; font-size: 10px; background: rgba(123,226,180,.09); color: #a7eac9; }
+    .caption { color: #79849b; font-size: 11px; }
+
+    /* Workflow */
+    .workflow { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; position: relative; }
+    .step { padding: 23px; position: relative; }
+    .step-number { color: #a49aff; font: 700 12px Manrope; }
+    .step-visual { height: 80px; display: flex; align-items: center; color: #bcafff; font-size: 36px; font-family: Manrope; }
+    .step h3 { font-size: 17px; margin-bottom: 7px; }
+    .step p { font-size: 12px; margin-bottom: 0; }
+    .step:not(:last-child)::after { content: &quot;→&quot;; position: absolute; top: 50%; right: -16px; color: #7570b5; z-index: 2; }
+
+    /* Connectivity */
+    .integrations { background: linear-gradient(180deg, transparent, rgba(50,59,122,.075), transparent); }
+    .connection-layout { display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: 50px; }
+    .network { position: relative; min-height: 390px; display: grid; place-items: center; }
+    .network::before, .network::after { content: &quot;&quot;; position: absolute; width: 245px; height: 245px; border: 1px dashed rgba(148,150,227,.22); border-radius: 50%; }
+    .network::after { width: 370px; height: 370px; opacity: .55; }
+    .network-center { z-index: 2; display: grid; place-items: center; width: 120px; height: 120px; border: 1px solid rgba(177,162,255,.45); border-radius: 27px; background: linear-gradient(135deg,#29224e,#12192b); box-shadow: 0 0 65px rgba(141,108,255,.21); font: 800 14px Manrope; letter-spacing: -.04em; }
+    .network-node { position: absolute; z-index: 2; padding: 11px 14px; border: 1px solid var(--line); background: #151b2b; border-radius: 9px; font-size: 12px; font-weight: 700; box-shadow: 0 10px 35px rgba(0,0,0,.2); }
+    .n1 { top: 22px; left: 45%; } .n2 { top: 87px; right: 6%; } .n3 { bottom: 72px; right: 4%; }
+    .n4 { bottom: 12px; left: 40%; } .n5 { bottom: 84px; left: 4%; } .n6 { top: 84px; left: 5%; }
+
+    /* Demo */
+    .demo-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    .demo-card { min-height: 370px; text-align: center; padding: 27px; position: relative; overflow: hidden; }
+    .demo-card::before { content: &quot;&quot;; position: absolute; width: 320px; height: 320px; left: 50%; top: 42%; transform: translate(-50%,-50%); background: radial-gradient(circle, rgba(139,112,255,.2), transparent 65%); pointer-events: none; }
+    .demo-card &gt; * { position: relative; }
+    .demo-top { display: flex; align-items: center; justify-content: space-between; font-size: 10px; letter-spacing: .13em; color: #9ba7bf; font-weight: 700; }
+    .demo-orb { width: 119px; height: 119px; margin: 31px auto 21px; border-radius: 50%; background: radial-gradient(circle at 36% 28%, #e5dcff, #8b77ee 21%, #36347c 55%, #101d39 80%); box-shadow: 0 0 50px rgba(123,106,245,.4), inset -9px -11px 22px rgba(0,0,0,.33); }
+    .demo-card h3 { margin: 0 0 5px; font-size: 17px; }
+    .demo-status { color: #aaa0ff; font-size: 12px; min-height: 20px; }
+    .waveform { height: 36px; display: flex; align-items: center; justify-content: center; gap: 4px; margin: 5px 0 17px; }
+    .waveform i { background: #a89bff; width: 3px; box-shadow: none; animation-play-state: paused; }
+    .demo-card.is-playing .waveform i { animation-play-state: running; }
+    .demo-card .btn { min-height: 42px; }
+    .demo-note { display: block; color: #8792a9; font-size: 10px; margin-top: 13px; }
+    .demo-copy .eyebrow { margin-bottom: 17px; }
+
+    /* Lower sections */
+    .use-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 15px; }
+    .use-card { padding: 24px; min-height: 195px; transition: transform .3s, border-color .3s; }
+    .use-card .glyph { color: #ae9fff; font-size: 28px; display: block; margin-bottom: 25px; }
+    .use-card p { font-size: 13px; margin: 0; }
+    .developer-layout { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: 60px; }
+    .code-window { overflow: hidden; border: 1px solid rgba(177,189,255,.18); border-radius: 16px; background: #0d121e; box-shadow: 0 24px 70px rgba(0,0,0,.25); }
+    .code-bar { padding: 13px 17px; border-bottom: 1px solid var(--line); display: flex; gap: 6px; align-items: center; color: #8e9ab1; font: 11px monospace; }
+    .code-bar i { width: 8px; height: 8px; border-radius: 50%; background: #38425b; }
+    .code-bar span { margin-left: auto; }
+    pre { margin: 0; padding: 25px; overflow-x: auto; color: #cad5e9; font: 12px/1.85 ui-monospace, SFMono-Regular, Consolas, monospace; }
+    .purple { color: #bea8ff; } .blue { color: #7bdbe9; } .green { color: #92dfb5; }
+    .security-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
+    .security-grid .feature { min-height: 190px; }
+    .pricing-card { display: grid; grid-template-columns: 1fr auto; gap: 25px; align-items: center; padding: 32px; }
+    .pricing-card h3 { font-size: 25px; margin: 12px 0 8px; }
+    .pricing-card p { max-width: 570px; margin: 0; font-size: 14px; }
+    .final-cta { text-align: center; overflow: hidden; padding: 100px 0; background: radial-gradient(ellipse at 50% 100%, rgba(101,82,205,.2), transparent 62%); }
+    .final-cta h2 { max-width: 760px; margin: 17px auto 18px; }
+    .final-cta p { max-width: 540px; margin: 0 auto 28px; }
+    .footer { border-top: 1px solid var(--line); padding: 49px 0 28px; }
+    .footer-main { display: flex; justify-content: space-between; gap: 35px; }
+    .footer p { font-size: 13px; max-width: 270px; margin-top: 14px; }
+    .footer-links { display: flex; gap: 60px; flex-wrap: wrap; }
+    .footer-links div { display: grid; gap: 13px; align-content: start; }
+    .footer-links strong { font-size: 12px; }
+    .footer-links a { color: #98a3b8; font-size: 12px; }
+    .footer-bottom { display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid var(--line); padding-top: 22px; margin-top: 48px; color: #78849b; font-size: 11px; }
+
+    [data-reveal] { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
+    [data-reveal].visible { opacity: 1; transform: none; }
+    @keyframes breathe { 50% { transform: translate(-50%,-50%) scale(1.055); filter: brightness(1.1); } }
+    @keyframes float { 50% { translate: 0 -9px; } }
+    @keyframes wave { to { height: 35px; } }
+
+    @media (max-width: 1050px) {
+      .nav-links { gap: 15px; }
+      .hero-grid { grid-template-columns: 1fr 1fr; }
+      .float-card { scale: .86; }
+      .transcript { right: -24px; } .booking { right: -21px; }
+    }
+    @media (max-width: 760px) {
+      .container { width: min(calc(100% - 36px), var(--max)); }
+      .section { padding: 80px 0; }
+      .nav { height: 66px; }
+      .menu-button { display: block; }
+      .nav-actions &gt; .btn { display: none; }
+      .nav-links { display: none; position: absolute; left: 0; right: 0; top: 66px; padding: 20px 18px; background: #0d111d; border-bottom: 1px solid var(--line); flex-direction: column; align-items: stretch; gap: 0; }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 12px 6px; }
+      .hero { min-height: auto; padding: 80px 0 55px; }
+      .hero-grid, .product-layout, .connection-layout, .demo-wrap, .developer-layout { grid-template-columns: 1fr; gap: 25px; }
+      .hero-copy h1 { max-width: 630px; }
+      .hero-art { height: 465px; max-width: 550px; width: 100%; margin-inline: auto; }
+      .core { width: 205px; height: 205px; }
+      .orbit.a { width: 330px; height: 330px; } .orbit.b { width: 440px; height: 440px; }
+      .incoming { top: 47px; } .transcript { top: 65px; right: 2px; }
+      .action { bottom: 91px; } .booking { bottom: 90px; right: 2px; }
+      .metrics-inner { grid-template-columns: repeat(2,1fr); gap: 22px 0; }
+      .metric:nth-child(3) { border-left: 0; padding-left: 0; }
+      .possibilities, .use-grid, .security-grid { grid-template-columns: repeat(2,1fr); }
+      .workflow { grid-template-columns: repeat(2,1fr); }
+      .workflow .step:nth-child(2)::after { display: none; }
+      .dashboard-scene { padding: 10px 0 35px; }
+      .dashboard { transform: none; }
+      .dashboard:hover { transform: translateY(-5px); }
+      .network { min-height: 370px; }
+    }
+    @media (max-width: 520px) {
+      .hero { padding-top: 61px; }
+      .hero-copy &gt; p { font-size: 15px; }
+      .hero-art { height: 370px; }
+      .core { width: 165px; height: 165px; }
+      .orbit.a { width: 280px; height: 280px; } .orbit.b { width: 350px; height: 350px; }
+      .float-card { padding: 9px 10px; scale: .73; }
+      .incoming { top: 22px; left: -25px; }
+      .transcript { top: 26px; right: -28px; }
+      .action { bottom: 78px; left: -30px; }
+      .booking { bottom: 78px; right: -29px; }
+      .hero-state { bottom: 0; }
+      .metrics-inner { gap: 17px 0; }
+      .metric { padding: 4px 13px; }
+      .metric strong { font-size: 23px; }
+      .metric span { font-size: 11px; }
+      .possibilities, .use-grid, .security-grid { grid-template-columns: 1fr; }
+      .feature { min-height: auto; }
+      .dash-stats { grid-template-columns: repeat(2,1fr); }
+      .workflow { grid-template-columns: 1fr; }
+      .workflow .step::after { display: none; }
+      .network { min-height: 320px; transform: scale(.82); margin: -25px; }
+      .pricing-card { grid-template-columns: 1fr; }
+      .footer-main { flex-direction: column; }
+      .footer-links { gap: 45px; }
+      .footer-bottom { flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+      [data-reveal] { opacity: 1; transform: none; }
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header class=&quot;nav-wrap&quot;&gt;
+    &lt;nav class=&quot;nav container&quot; aria-label=&quot;Main navigation&quot;&gt;
+      &lt;a class=&quot;brand&quot; href=&quot;#top&quot; aria-label=&quot;Amreetal home&quot;&gt;&lt;span class=&quot;brand-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;amreetal&lt;span style=&quot;color:#aa9aff&quot;&gt;.&lt;/span&gt;&lt;/a&gt;
+      &lt;div class=&quot;nav-links&quot; id=&quot;navLinks&quot;&gt;
+        &lt;a href=&quot;#platform&quot;&gt;Platform&lt;/a&gt;&lt;a href=&quot;#how-it-works&quot;&gt;How it works&lt;/a&gt;
+        &lt;a href=&quot;#integrations&quot;&gt;Connectivity&lt;/a&gt;&lt;a href=&quot;#use-cases&quot;&gt;Use cases&lt;/a&gt;&lt;a href=&quot;#pricing&quot;&gt;Pricing&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;nav-actions&quot;&gt;
+        &lt;a class=&quot;btn btn-outline&quot; href=&quot;#demo&quot;&gt;Hear the preview ↗&lt;/a&gt;
+        &lt;button class=&quot;menu-button&quot; id=&quot;menuButton&quot; aria-label=&quot;Open menu&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;navLinks&quot;&gt;☰&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;main id=&quot;top&quot;&gt;
+    &lt;section class=&quot;hero&quot;&gt;
+      &lt;div class=&quot;container hero-grid&quot;&gt;
+        &lt;div class=&quot;hero-copy&quot;&gt;
+          &lt;span class=&quot;pill&quot;&gt;&lt;span class=&quot;dot&quot;&gt;&lt;/span&gt; The next interface is a conversation&lt;/span&gt;
+          &lt;h1&gt;AI Voice Agents That &lt;span class=&quot;gradient-text&quot;&gt;Talk, Think &amp;amp; Take Action.&lt;/span&gt;&lt;/h1&gt;
+          &lt;p&gt;Build autonomous AI voice agents that answer calls, qualify leads, book appointments, follow up with customers and automate conversations — 24/7.&lt;/p&gt;
+          &lt;div class=&quot;hero-buttons&quot;&gt;
+            &lt;!-- Replace this prototype anchor with the existing application signup route. --&gt;
+            &lt;a class=&quot;btn btn-primary&quot; href=&quot;#platform&quot;&gt;Build Your Agent &lt;span aria-hidden=&quot;true&quot;&gt;↗&lt;/span&gt;&lt;/a&gt;
+            &lt;a class=&quot;btn btn-outline&quot; href=&quot;#demo&quot;&gt;Talk to an Agent &lt;span aria-hidden=&quot;true&quot;&gt;↗&lt;/span&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;hero-foot&quot;&gt;&lt;span&gt;✦&lt;/span&gt; From first hello to finished workflow.&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;hero-art&quot; aria-label=&quot;Illustration of an AI voice agent handling a call and taking action&quot;&gt;
+          &lt;div class=&quot;art-grid&quot;&gt;&lt;/div&gt;&lt;div class=&quot;orbit b&quot;&gt;&lt;/div&gt;&lt;div class=&quot;orbit a&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;core&quot;&gt;&lt;div class=&quot;core-wave&quot; aria-hidden=&quot;true&quot;&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
+          &lt;div class=&quot;float-card incoming&quot;&gt;&lt;small&gt;Live call&lt;/small&gt;&lt;strong&gt;&lt;span class=&quot;line-icon&quot;&gt;↗&lt;/span&gt;Incoming call&lt;/strong&gt;&lt;/div&gt;
+          &lt;div class=&quot;float-card transcript&quot;&gt;&lt;small&gt;Customer said&lt;/small&gt;&lt;strong&gt;“Can I book for tomorrow?”&lt;/strong&gt;&lt;/div&gt;
+          &lt;div class=&quot;float-card action&quot;&gt;&lt;small&gt;Agent action&lt;/small&gt;&lt;strong&gt;&lt;span style=&quot;color:var(--green)&quot;&gt;✓&lt;/span&gt; CRM record updated&lt;/strong&gt;&lt;/div&gt;
+          &lt;div class=&quot;float-card booking&quot;&gt;&lt;small&gt;Confirmation&lt;/small&gt;&lt;strong&gt;&lt;span style=&quot;color:var(--green)&quot;&gt;✓&lt;/span&gt; Appointment booked&lt;/strong&gt;&lt;/div&gt;
+          &lt;div class=&quot;hero-state&quot; aria-live=&quot;polite&quot;&gt;&lt;span&gt;Agent activity&lt;/span&gt;&lt;strong id=&quot;heroStatus&quot;&gt;Incoming Call&lt;/strong&gt;&lt;div class=&quot;state-progress&quot;&gt;&lt;span id=&quot;stateProgress&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;metrics divider&quot; aria-label=&quot;Platform capabilities&quot;&gt;
+      &lt;div class=&quot;container metrics-inner&quot;&gt;
+        &lt;div class=&quot;metric&quot;&gt;&lt;strong&gt;24/7&lt;/strong&gt;&lt;span&gt;Conversations that don't clock out&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;metric&quot;&gt;&lt;strong&gt;01&lt;/strong&gt;&lt;span&gt;Agent across the customer journey&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;metric&quot;&gt;&lt;strong&gt;Real time&lt;/strong&gt;&lt;span&gt;From conversation to action&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;metric&quot;&gt;&lt;strong&gt;Human&lt;/strong&gt;&lt;span&gt;Experiences, built with AI&lt;/span&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;section&quot; id=&quot;capabilities&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;section-heading&quot; data-reveal&gt;&lt;span class=&quot;eyebrow&quot;&gt;Built to do more&lt;/span&gt;&lt;h2&gt;One AI Agent.&lt;br /&gt;&lt;span class=&quot;gradient-text&quot;&gt;Endless Possibilities.&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Not another voicemail replacement. A voice-first teammate that understands the request and moves work forward.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;possibilities&quot;&gt;
+          &lt;article class=&quot;card feature&quot; data-reveal&gt;&lt;div class=&quot;feature-icon&quot;&gt;◉&lt;/div&gt;&lt;h3&gt;Answer every call&lt;/h3&gt;&lt;p&gt;Welcome callers with natural conversations, even when your team is busy.&lt;/p&gt;&lt;/article&gt;
+          &lt;article class=&quot;card feature&quot; data-reveal&gt;&lt;div class=&quot;feature-icon&quot;&gt;◇&lt;/div&gt;&lt;h3&gt;Qualify with context&lt;/h3&gt;&lt;p&gt;Ask the right questions and capture the details your team needs.&lt;/p&gt;&lt;/article&gt;
+          &lt;article class=&quot;card feature&quot; data-reveal&gt;&lt;div class=&quot;feature-icon&quot;&gt;▦&lt;/div&gt;&lt;h3&gt;Book the next step&lt;/h3&gt;&lt;p&gt;Turn a good conversation into a scheduled appointment.&lt;/p&gt;&lt;/article&gt;
+          &lt;article class=&quot;card feature&quot; data-reveal&gt;&lt;div class=&quot;feature-icon&quot;&gt;↗&lt;/div&gt;&lt;h3&gt;Follow up&lt;/h3&gt;&lt;p&gt;Keep conversations moving after the call ends.&lt;/p&gt;&lt;/article&gt;
+          &lt;article class=&quot;card feature&quot; data-reveal&gt;&lt;div class=&quot;feature-icon&quot;&gt;⌘&lt;/div&gt;&lt;h3&gt;Update your systems&lt;/h3&gt;&lt;p&gt;Move information into the workflows your business already uses.&lt;/p&gt;&lt;/article&gt;
+          &lt;article class=&quot;card feature&quot; data-reveal&gt;&lt;div class=&quot;feature-icon&quot;&gt;✳&lt;/div&gt;&lt;h3&gt;Work your way&lt;/h3&gt;&lt;p&gt;Shape the agent around your processes, questions, and customer experience.&lt;/p&gt;&lt;/article&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;section product-section divider&quot; id=&quot;platform&quot;&gt;
+      &lt;div class=&quot;container product-layout&quot;&gt;
+        &lt;div class=&quot;product-copy&quot; data-reveal&gt;
+          &lt;span class=&quot;eyebrow&quot;&gt;Inside the platform&lt;/span&gt;
+          &lt;h2&gt;Every conversation, &lt;span class=&quot;gradient-text&quot;&gt;in motion.&lt;/span&gt;&lt;/h2&gt;
+          &lt;p&gt;Give your team a clear view of what your agent heard, what it said, and what happened next.&lt;/p&gt;
+          &lt;ul class=&quot;check-list&quot;&gt;&lt;li&gt;&lt;b&gt;✓&lt;/b&gt; Follow the live conversation&lt;/li&gt;&lt;li&gt;&lt;b&gt;✓&lt;/b&gt; See outcomes alongside the transcript&lt;/li&gt;&lt;li&gt;&lt;b&gt;✓&lt;/b&gt; Move from insight to action&lt;/li&gt;&lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;dashboard-scene&quot; data-reveal&gt;
+          &lt;div class=&quot;dashboard&quot;&gt;
+            &lt;div class=&quot;dash-top&quot;&gt;&lt;strong&gt;AMREETAL AGENT&lt;/strong&gt;&lt;span class=&quot;pill&quot;&gt;&lt;span class=&quot;dot&quot;&gt;&lt;/span&gt; Live&lt;/span&gt;&lt;/div&gt;
+            &lt;div class=&quot;dash-title&quot;&gt;&lt;small&gt;Agent overview&lt;/small&gt;Hotel Booking Agent&lt;/div&gt;
+            &lt;div class=&quot;dash-stats&quot;&gt;
+              &lt;div class=&quot;dash-stat&quot;&gt;&lt;small&gt;Calls today&lt;/small&gt;&lt;b&gt;128&lt;/b&gt;&lt;/div&gt;
+              &lt;div class=&quot;dash-stat&quot;&gt;&lt;small&gt;Resolved&lt;/small&gt;&lt;b&gt;94%&lt;/b&gt;&lt;/div&gt;
+              &lt;div class=&quot;dash-stat&quot;&gt;&lt;small&gt;Appointments&lt;/small&gt;&lt;b&gt;37&lt;/b&gt;&lt;/div&gt;
+              &lt;div class=&quot;dash-stat&quot;&gt;&lt;small&gt;Avg duration&lt;/small&gt;&lt;b&gt;02:41&lt;/b&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;call-panel&quot;&gt;
+              &lt;div class=&quot;call-panel-head&quot;&gt;&lt;span&gt;● LIVE CALL&lt;/span&gt;&lt;span&gt;00:42&lt;/span&gt;&lt;/div&gt;
+              &lt;div class=&quot;chat&quot;&gt;&lt;b&gt;CUSTOMER&lt;/b&gt;“Do you have a room available tomorrow?”&lt;/div&gt;
+              &lt;div class=&quot;chat ai&quot;&gt;&lt;b&gt;AI AGENT&lt;/b&gt;“Absolutely. Let me check availability...”&lt;/div&gt;
+              &lt;div class=&quot;dash-actions&quot;&gt;&lt;span&gt;✓ Calendar checked&lt;/span&gt;&lt;span&gt;✓ Room available&lt;/span&gt;&lt;span&gt;✓ Booking created&lt;/span&gt;&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;span class=&quot;caption&quot;&gt;Illustrative product preview. Numbers and conversation are sample data.&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;section divider&quot; id=&quot;how-it-works&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;section-heading&quot; data-reveal&gt;&lt;span class=&quot;eyebrow&quot;&gt;How it works&lt;/span&gt;&lt;h2&gt;From “hello” to &lt;span class=&quot;gradient-text&quot;&gt;handled.&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;A connected flow that turns an incoming call into a meaningful outcome.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;workflow&quot;&gt;
+          &lt;div class=&quot;card step&quot; data-reveal&gt;&lt;span class=&quot;step-number&quot;&gt;01 / CONNECT&lt;/span&gt;&lt;div class=&quot;step-visual&quot;&gt;◉&lt;/div&gt;&lt;h3&gt;The call comes in&lt;/h3&gt;&lt;p&gt;Your agent welcomes the caller and understands why they're calling.&lt;/p&gt;&lt;/div&gt;
+          &lt;div class=&quot;card step&quot; data-reveal&gt;&lt;span class=&quot;step-number&quot;&gt;02 / UNDERSTAND&lt;/span&gt;&lt;div class=&quot;step-visual&quot;&gt;≋&lt;/div&gt;&lt;h3&gt;It listens and thinks&lt;/h3&gt;&lt;p&gt;The conversation adapts to the caller's questions and intent.&lt;/p&gt;&lt;/div&gt;
+          &lt;div class=&quot;card step&quot; data-reveal&gt;&lt;span class=&quot;step-number&quot;&gt;03 / ACT&lt;/span&gt;&lt;div class=&quot;step-visual&quot;&gt;⌘&lt;/div&gt;&lt;h3&gt;It takes action&lt;/h3&gt;&lt;p&gt;Collect details, prepare an update, or advance the next step.&lt;/p&gt;&lt;/div&gt;
+          &lt;div class=&quot;card step&quot; data-reveal&gt;&lt;span class=&quot;step-number&quot;&gt;04 / COMPLETE&lt;/span&gt;&lt;div class=&quot;step-visual&quot;&gt;✓&lt;/div&gt;&lt;h3&gt;Everyone stays in sync&lt;/h3&gt;&lt;p&gt;The conversation ends with a clear outcome and context.&lt;/p&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;section integrations divider&quot; id=&quot;integrations&quot;&gt;
+      &lt;div class=&quot;container connection-layout&quot;&gt;
+        &lt;div data-reveal&gt;&lt;span class=&quot;eyebrow&quot;&gt;Connectivity&lt;/span&gt;&lt;h2&gt;Built for the way &lt;span class=&quot;gradient-text&quot;&gt;work flows.&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Voice is only the beginning. Design agent experiences around conversations, scheduling, customer records, and actions.&lt;/p&gt;&lt;p class=&quot;caption&quot;&gt;The diagram shows workflow concepts, not a list of verified third-party integrations.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;network&quot; aria-label=&quot;Conceptual diagram connecting Amreetal to business workflows&quot; data-reveal&gt;
+          &lt;div class=&quot;network-center&quot;&gt;amreetal.&lt;/div&gt;
+          &lt;span class=&quot;network-node n1&quot;&gt;Voice&lt;/span&gt;&lt;span class=&quot;network-node n2&quot;&gt;Scheduling&lt;/span&gt;
+          &lt;span class=&quot;network-node n3&quot;&gt;Workflows&lt;/span&gt;&lt;span class=&quot;network-node n4&quot;&gt;Webhooks&lt;/span&gt;
+          &lt;span class=&quot;network-node n5&quot;&gt;Customer data&lt;/span&gt;&lt;span class=&quot;network-node n6&quot;&gt;Conversations&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;section divider&quot; id=&quot;demo&quot;&gt;
+      &lt;div class=&quot;container demo-wrap&quot;&gt;
+        &lt;div class=&quot;demo-copy&quot; data-reveal&gt;&lt;span class=&quot;eyebrow&quot;&gt;Hear the idea&lt;/span&gt;&lt;h2&gt;An agent that sounds ready to help.&lt;/h2&gt;&lt;p&gt;Experience a short voice preview of the kind of welcome your callers could hear. Real agent conversations would be connected through the existing product.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;card demo-card&quot; id=&quot;demoCard&quot; data-reveal&gt;
+          &lt;div class=&quot;demo-top&quot;&gt;&lt;span&gt;AMREETAL / AI VOICE AGENT&lt;/span&gt;&lt;span class=&quot;dot&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+          &lt;div class=&quot;demo-orb&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
+          &lt;h3&gt;Hotel Booking Agent&lt;/h3&gt;&lt;div class=&quot;demo-status&quot; id=&quot;demoStatus&quot; aria-live=&quot;polite&quot;&gt;Ready to speak&lt;/div&gt;
+          &lt;div class=&quot;waveform&quot; aria-hidden=&quot;true&quot;&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;/div&gt;
+          &lt;button class=&quot;btn btn-primary&quot; id=&quot;voiceButton&quot; type=&quot;button&quot;&gt;Play voice preview &lt;span aria-hidden=&quot;true&quot;&gt;↗&lt;/span&gt;&lt;/button&gt;
+          &lt;span class=&quot;demo-note&quot;&gt;Browser-generated sample · Not a live AI call&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;section divider&quot; id=&quot;use-cases&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;section-heading&quot; data-reveal&gt;&lt;span class=&quot;eyebrow&quot;&gt;Use cases&lt;/span&gt;&lt;h2&gt;Made for conversations &lt;span class=&quot;gradient-text&quot;&gt;that matter.&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Meet customers where they already are: on the phone, looking for an answer.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;use-grid&quot;&gt;
+          &lt;article class=&quot;card use-card&quot; data-reveal&gt;&lt;span class=&quot;glyph&quot;&gt;⌂&lt;/span&gt;&lt;h3&gt;Hospitality&lt;/h3&gt;&lt;p&gt;Help guests ask questions, check options, and move toward a reservation.&lt;/p&gt;&lt;/article&gt;
+          &lt;article class=&quot;card use-card&quot; data-reveal&gt;&lt;span class=&quot;glyph&quot;&gt;✳&lt;/span&gt;&lt;h3&gt;Healthcare administration&lt;/h3&gt;&lt;p&gt;Support appointment inquiries and routine scheduling conversations.&lt;/p&gt;&lt;/article&gt;
+          &lt;article class=&quot;card use-card&quot; data-reveal&gt;&lt;span class=&quot;glyph&quot;&gt;◇&lt;/span&gt;&lt;h3&gt;Real estate&lt;/h3&gt;&lt;p&gt;Respond to inquiries and gather the details behind a promising lead.&lt;/p&gt;&lt;/article&gt;
+          &lt;article class=&quot;card use-card&quot; data-reveal&gt;&lt;span class=&quot;glyph&quot;&gt;↗&lt;/span&gt;&lt;h3&gt;Sales teams&lt;/h3&gt;&lt;p&gt;Qualify incoming interest and make every next conversation more informed.&lt;/p&gt;&lt;/article&gt;
+          &lt;article class=&quot;card use-card&quot; data-reveal&gt;&lt;span class=&quot;glyph&quot;&gt;▦&lt;/span&gt;&lt;h3&gt;Service businesses&lt;/h3&gt;&lt;p&gt;Handle common questions and guide callers toward the right appointment.&lt;/p&gt;&lt;/article&gt;
+          &lt;article class=&quot;card use-card&quot; data-reveal&gt;&lt;span class=&quot;glyph&quot;&gt;◎&lt;/span&gt;&lt;h3&gt;Customer operations&lt;/h3&gt;&lt;p&gt;Bring consistency to recurring calls without losing a human tone.&lt;/p&gt;&lt;/article&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;section divider&quot; id=&quot;developers&quot;&gt;
+      &lt;div class=&quot;container developer-layout&quot;&gt;
+        &lt;div data-reveal&gt;&lt;span class=&quot;eyebrow&quot;&gt;For builders&lt;/span&gt;&lt;h2&gt;Voice intelligence meets &lt;span class=&quot;gradient-text&quot;&gt;your workflow.&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Design conversational experiences that do more than speak. Keep the handoff from intent to business action understandable and intentional.&lt;/p&gt;&lt;span class=&quot;pill&quot;&gt;Conceptual event flow&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;code-window&quot; data-reveal&gt;
+          &lt;div class=&quot;code-bar&quot;&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;conversation-event.json · illustrative&lt;/span&gt;&lt;/div&gt;
+          &lt;pre&gt;&lt;span class=&quot;purple&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;blue&quot;&gt;&quot;event&quot;&lt;/span&gt;: &lt;span class=&quot;green&quot;&gt;&quot;conversation.completed&quot;&lt;/span&gt;,
+  &lt;span class=&quot;blue&quot;&gt;&quot;agent&quot;&lt;/span&gt;: &lt;span class=&quot;green&quot;&gt;&quot;hotel-booking&quot;&lt;/span&gt;,
+  &lt;span class=&quot;blue&quot;&gt;&quot;intent&quot;&lt;/span&gt;: &lt;span class=&quot;green&quot;&gt;&quot;book_room&quot;&lt;/span&gt;,
+  &lt;span class=&quot;blue&quot;&gt;&quot;outcome&quot;&lt;/span&gt;: &lt;span class=&quot;purple&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;blue&quot;&gt;&quot;status&quot;&lt;/span&gt;: &lt;span class=&quot;green&quot;&gt;&quot;booking_created&quot;&lt;/span&gt;,
+    &lt;span class=&quot;blue&quot;&gt;&quot;next_step&quot;&lt;/span&gt;: &lt;span class=&quot;green&quot;&gt;&quot;send_confirmation&quot;&lt;/span&gt;
+  &lt;span class=&quot;purple&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;purple&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;section divider&quot; id=&quot;security&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;section-heading&quot; data-reveal&gt;&lt;span class=&quot;eyebrow&quot;&gt;Built with intention&lt;/span&gt;&lt;h2&gt;Powerful conversations.&lt;br /&gt;&lt;span class=&quot;gradient-text&quot;&gt;Clear control.&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Business conversations deserve thoughtful design. Define what an agent should handle, what it should capture, and when a human should take over.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;security-grid&quot;&gt;
+          &lt;article class=&quot;card feature&quot; data-reveal&gt;&lt;div class=&quot;feature-icon&quot;&gt;◎&lt;/div&gt;&lt;h3&gt;Purposeful boundaries&lt;/h3&gt;&lt;p&gt;Shape the agent's role around your business process.&lt;/p&gt;&lt;/article&gt;
+          &lt;article class=&quot;card feature&quot; data-reveal&gt;&lt;div class=&quot;feature-icon&quot;&gt;▤&lt;/div&gt;&lt;h3&gt;Conversation visibility&lt;/h3&gt;&lt;p&gt;Make outcomes and the context behind them easier to review.&lt;/p&gt;&lt;/article&gt;
+          &lt;article class=&quot;card feature&quot; data-reveal&gt;&lt;div class=&quot;feature-icon&quot;&gt;⇄&lt;/div&gt;&lt;h3&gt;Human handoff&lt;/h3&gt;&lt;p&gt;Plan a clear next step when a conversation needs your team.&lt;/p&gt;&lt;/article&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;section divider&quot; id=&quot;pricing&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;section-heading&quot; data-reveal&gt;&lt;span class=&quot;eyebrow&quot;&gt;Pricing&lt;/span&gt;&lt;h2&gt;Start with the right &lt;span class=&quot;gradient-text&quot;&gt;conversation.&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Voice workflows differ from business to business. Explore the platform preview, then connect your existing sales or signup flow when integrating this page.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;card pricing-card&quot; data-reveal&gt;&lt;div&gt;&lt;span class=&quot;pill&quot;&gt;Plans for your use case&lt;/span&gt;&lt;h3&gt;Built around what your agent needs to do.&lt;/h3&gt;&lt;p&gt;No unverified prices, usage limits, or contractual terms are shown in this prototype.&lt;/p&gt;&lt;/div&gt;&lt;a class=&quot;btn btn-outline&quot; href=&quot;#demo&quot;&gt;Explore the preview ↗&lt;/a&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;final-cta divider&quot; id=&quot;contact&quot;&gt;
+      &lt;div class=&quot;container&quot; data-reveal&gt;&lt;span class=&quot;eyebrow&quot;&gt;The future is on the line&lt;/span&gt;&lt;h2&gt;Every call could be the start of &lt;span class=&quot;gradient-text&quot;&gt;something better.&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Give every conversation the attention it deserves — and a way to move forward.&lt;/p&gt;&lt;a class=&quot;btn btn-primary&quot; href=&quot;#platform&quot;&gt;Build Your Agent ↗&lt;/a&gt;&lt;/div&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+
+  &lt;footer class=&quot;footer&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;footer-main&quot;&gt;
+        &lt;div&gt;&lt;a class=&quot;brand&quot; href=&quot;#top&quot;&gt;&lt;span class=&quot;brand-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;amreetal&lt;span style=&quot;color:#aa9aff&quot;&gt;.&lt;/span&gt;&lt;/a&gt;&lt;p&gt;Voice agents for conversations that go somewhere.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;footer-links&quot;&gt;
+          &lt;div&gt;&lt;strong&gt;Explore&lt;/strong&gt;&lt;a href=&quot;#platform&quot;&gt;Platform&lt;/a&gt;&lt;a href=&quot;#how-it-works&quot;&gt;How it works&lt;/a&gt;&lt;a href=&quot;#demo&quot;&gt;Voice preview&lt;/a&gt;&lt;/div&gt;
+          &lt;div&gt;&lt;strong&gt;Solutions&lt;/strong&gt;&lt;a href=&quot;#use-cases&quot;&gt;Use cases&lt;/a&gt;&lt;a href=&quot;#integrations&quot;&gt;Connectivity&lt;/a&gt;&lt;a href=&quot;#developers&quot;&gt;For builders&lt;/a&gt;&lt;/div&gt;
+          &lt;div&gt;&lt;strong&gt;Company&lt;/strong&gt;&lt;a href=&quot;#security&quot;&gt;Approach&lt;/a&gt;&lt;a href=&quot;#pricing&quot;&gt;Pricing&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;footer-bottom&quot;&gt;&lt;span&gt;© &lt;span id=&quot;year&quot;&gt;&lt;/span&gt; Amreetal. All rights reserved.&lt;/span&gt;&lt;span&gt;Designed for the next generation of conversation.&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/footer&gt;
+
+  &lt;script&gt;
+    const reducedMotion = window.matchMedia(&quot;(prefers-reduced-motion: reduce)&quot;).matches;
+
+    // Accessible mobile navigation.
+    const menuButton = document.getElementById(&quot;menuButton&quot;);
+    const navLinks = document.getElementById(&quot;navLinks&quot;);
+    menuButton.addEventListener(&quot;click&quot;, () =&gt; {
+      const open = navLinks.classList.toggle(&quot;open&quot;);
+      menuButton.setAttribute(&quot;aria-expanded&quot;, String(open));
+      menuButton.setAttribute(&quot;aria-label&quot;, open ? &quot;Close menu&quot; : &quot;Open menu&quot;);
+    });
+    navLinks.querySelectorAll(&quot;a&quot;).forEach(link =&gt; link.addEventListener(&quot;click&quot;, () =&gt; {
+      navLinks.classList.remove(&quot;open&quot;);
+      menuButton.setAttribute(&quot;aria-expanded&quot;, &quot;false&quot;);
+      menuButton.setAttribute(&quot;aria-label&quot;, &quot;Open menu&quot;);
+    }));
+
+    // Lightweight reveal; content remains visible if IntersectionObserver is unavailable.
+    const revealItems = document.querySelectorAll(&quot;[data-reveal]&quot;);
+    if (!reducedMotion &amp;&amp; &quot;IntersectionObserver&quot; in window) {
+      const observer = new IntersectionObserver(entries =&gt; {
+        entries.forEach(entry =&gt; {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(&quot;visible&quot;);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: .1 });
+      revealItems.forEach(item =&gt; observer.observe(item));
+    } else {
+      revealItems.forEach(item =&gt; item.classList.add(&quot;visible&quot;));
+    }
+
+    // Illustrative hero sequence; no network calls or product state changes.
+    const states = [&quot;Incoming Call&quot;, &quot;Listening&quot;, &quot;Thinking&quot;, &quot;Speaking&quot;, &quot;CRM Updated&quot;, &quot;Appointment Booked&quot;, &quot;Call Completed&quot;];
+    let stateIndex = 0;
+    if (!reducedMotion) {
+      window.setInterval(() =&gt; {
+        stateIndex = (stateIndex + 1) % states.length;
+        document.getElementById(&quot;heroStatus&quot;).textContent = states[stateIndex];
+        document.getElementById(&quot;stateProgress&quot;).style.width = `${((stateIndex + 1) / states.length) * 100}%`;
+      }, 2200);
+    }
+
+    // Explicitly a browser-generated sample, not a live AI agent.
+    const voiceButton = document.getElementById(&quot;voiceButton&quot;);
+    const demoStatus = document.getElementById(&quot;demoStatus&quot;);
+    const demoCard = document.getElementById(&quot;demoCard&quot;);
+    if (!(&quot;speechSynthesis&quot; in window)) {
+      voiceButton.disabled = true;
+      voiceButton.textContent = &quot;Voice preview unavailable&quot;;
+      demoStatus.textContent = &quot;Not supported in this browser&quot;;
+    } else {
+      voiceButton.addEventListener(&quot;click&quot;, () =&gt; {
+        if (speechSynthesis.speaking) {
+          speechSynthesis.cancel();
+          demoCard.classList.remove(&quot;is-playing&quot;);
+          demoStatus.textContent = &quot;Ready to speak&quot;;
+          voiceButton.textContent = &quot;Play voice preview ↗&quot;;
+          return;
+        }
+        const utterance = new SpeechSynthesisUtterance(
+          &quot;Hello! Thanks for calling. I'd be happy to help you check availability for tomorrow. What kind of room are you looking for?&quot;
+        );
+        utterance.rate = .94;
+        utterance.pitch = 1.03;
+        utterance.onstart = () =&gt; {
+          demoCard.classList.add(&quot;is-playing&quot;);
+          demoStatus.textContent = &quot;Speaking...&quot;;
+          voiceButton.textContent = &quot;Stop preview&quot;;
+        };
+        const reset = () =&gt; {
+          demoCard.classList.remove(&quot;is-playing&quot;);
+          demoStatus.textContent = &quot;Ready to speak&quot;;
+          voiceButton.textContent = &quot;Play voice preview ↗&quot;;
+        };
+        utterance.onend = reset;
+        utterance.onerror = reset;
+        speechSynthesis.speak(utterance);
+      });
+    }
+
+    document.getElementById(&quot;year&quot;).textContent = new Date().getFullYear();
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
